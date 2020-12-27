@@ -1,3 +1,64 @@
-h1 {
-  color: $color--aqua;
+.navbar, .navbar--vertical {
+  z-index: 100000;
+  background-color: $color--black !important;
+}
+
+.navbar {
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  height: 8%;
+
+  .navbar--nav {
+    margin-left: 10%;
+
+    .nav--link {
+      padding-right: 30px;
+      color: $color--black;
+      font-size: $font--size__medium-large;
+      text-shadow: -1px 0 $color--aqua, 0 1px $color--aqua, 1px 0 $color--aqua, 0 -1px $color--aqua;
+      text-decoration: none;
+      transition: background .6s, color .6s;
+      -webkit-transition: background .6s, color .6s;
+
+      &:hover {
+        color: $color--aqua;
+      }
+    }
+
+    .nav--link__active {
+      color: $color--aqua !important;
+
+    }
+
+  }
+}
+
+.navbar--vertical {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  height: 100%;
+  width: 10%;
+
+  .navbar--nav {
+    display: flex;
+    flex-direction: column;
+
+    .nav--link {
+      font-size: $font--size__medium-small;
+      list-style: none;
+      text-align: center;
+      padding-bottom: 15px;
+      color: $color--white ;
+      text-shadow: none ;
+      text-decoration: none;
+      transition: background .8s, color .8s;
+      -webkit-transition: background .8s, color .8s;
+      &:hover{
+        color: $color--aqua
+      }
+    }
+
+  }
 }

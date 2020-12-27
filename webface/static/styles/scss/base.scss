@@ -1,0 +1,18 @@
+body{
+  background-color: $color--gray !important;
+  font-family: $font--main !important;
+}
+.main{
+  position: relative;
+  display: flex;
+  height: 90%;
+}
+.base--content{
+  position: relative;
+  left:10%;
+  top:8%;
+  height: auto;
+  width: 90%;
+  color: $color--white;
+  padding: 15px 15px;
+}
