@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,EAAE,CACA,KAAK,CAAE,IAAI",
-"sources": ["style.scss"],
+"mappings": "AAAA,EAAG,CACD,KAAK,CCEQ,OAAO",
+"sources": ["scss/navbar.scss","scss/colors.scss"],
 "names": [],
 "file": "style.css"
 }
