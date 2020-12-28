@@ -7,6 +7,9 @@
   position: fixed !important;
   width: 100%;
   top: 0;
+  -webkit-box-shadow: 0px 4px 15px 5px $color--blue;
+  -moz-box-shadow: 0px 4px 15px 5px $color--blue;
+  box-shadow: 0px 4px 15px 5px $color--blue;
   height: 8%;
 
   .navbar--nav {
@@ -40,6 +43,9 @@
   left: 0;
   height: 100%;
   width: 10%;
+  -webkit-box-shadow: 4px 20px 15px 5px $color--blue;
+  -moz-box-shadow: 4px 20px 15px 5px $color--blue;
+  box-shadow: 4px 20px 15px 5px $color--blue;
 
   .navbar--nav {
     display: flex;
