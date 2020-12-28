@@ -7,23 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-28 19:48+0100\n"
-"PO-Revision-Date: 2020-12-28 19:52+0100\n"
+"POT-Creation-Date: 2020-12-28 20:07+0100\n"
+"PO-Revision-Date: 2020-12-28 20:08+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "Language: cs\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#: .\docs\templates\about.html:6
+#: .\docs\templates\about.html:6 .\docs\templates\base.html:20
 msgid "About"
 msgstr "O aplikaci"
 
-#: .\docs\templates\about.html:9
+#: .\docs\templates\about.html:10
 msgid ""
 "MarkoGebra is a high school graduation project of a technical lyceum student "
 "in Czech city Olomouc. The goal of the project is to create a user-friendly "
@@ -35,7 +35,7 @@ msgstr ""
 "pochopitelné prostředí pro tvorbu různých druhů grafů, které má ovšem velmi "
 "rozsáhlé možnosti."
 
-#: .\docs\templates\about.html:12
+#: .\docs\templates\about.html:13
 msgid ""
 "The project is written in Python programming language using mainly Tkinter, "
 "matplotlib and numpy libraries. A simple sqllite database then runs on the "
@@ -45,11 +45,11 @@ msgstr ""
 "matplotlib a numpy. Na backendu poté běží jednoduchá sqllite databáze. "
 "Projekt je veřejně k nahlédnutí"
 
-#: .\docs\templates\about.html:13
+#: .\docs\templates\about.html:14
 msgid "here"
 msgstr "zde"
 
-#: .\docs\templates\about.html:14
+#: .\docs\templates\about.html:15
 msgid ""
 "Although the application tries to be as simple and user-friendly as "
 "possible, so do some functions may not be completely clear at first glance. "
@@ -61,13 +61,29 @@ msgstr ""
 "měla sloužit tato dokumentace, popřípadě může být nápomocná i dostupná "
 "diskuze."
 
-#: .\docs\templates\about.html:17
+#: .\docs\templates\about.html:18
 msgid "I hope you enjoy the app."
 msgstr "Doufám, že se Vám bude aplikace líbit."
 
-#: .\docs\templates\about.html:20
+#: .\docs\templates\about.html:21
 msgid "Kindest regards, Mark"
 msgstr "Marek"
+
+#: .\docs\templates\base.html:21
+msgid "Features"
+msgstr "Funkce"
+
+#: .\docs\templates\base.html:22
+msgid "Installation"
+msgstr "Instalace"
+
+#: .\docs\templates\base.html:23
+msgid "Discussion"
+msgstr "Diskuze"
+
+#: .\docs\templates\base.html:24
+msgid "How to use"
+msgstr "Návod k použití"
 
 #~ msgid "Test of translation"
 #~ msgstr "Zkouška překladu"

@@ -17,11 +17,11 @@
 <nav class="navbar navbar-expand-lg">
     <a style="color:aqua" href="{% url 'docs:home' %}">MG</a>
     <div class="navbar--nav">
-      <a class="nav--link" href="{% url 'docs:about' %}">About</a>
-      <a class="nav--link" href="{% url 'docs:features' %}">Features</a>
-      <a class="nav--link" href="{% url 'docs:installation' %}">Installation</a>
-      <a class="nav--link" href="{% url 'docs:discussion' %}">Discussion</a>
-      <a class="nav--link" href="{% url 'docs:how_to_use' %}">How to use</a>
+      <a class="nav--link" href="{% url 'docs:about' %}">{% trans 'About' %}</a>
+      <a class="nav--link" href="{% url 'docs:features' %}">{% trans 'Features' %}</a>
+      <a class="nav--link" href="{% url 'docs:installation' %}">{% trans 'Installation' %}</a>
+      <a class="nav--link" href="{% url 'docs:discussion' %}">{% trans 'Discussion' %}</a>
+      <a class="nav--link" href="{% url 'docs:how_to_use' %}">{% trans 'How to use' %}</a>
     </div>
 </nav>
 <div class="main">
