@@ -3,24 +3,71 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-28 10:28+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2020-12-28 19:48+0100\n"
+"PO-Revision-Date: 2020-12-28 19:52+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: cs\n"
+"X-Generator: Poedit 2.4.1\n"
 
-#: .\docs\templates\about.html:5
+#: .\docs\templates\about.html:6
 msgid "About"
 msgstr "O aplikaci"
+
+#: .\docs\templates\about.html:9
+msgid ""
+"MarkoGebra is a high school graduation project of a technical lyceum student "
+"in Czech city Olomouc. The goal of the project is to create a user-friendly "
+"and understandable environment to create different types of graphs, which, "
+"however, has very extensible possibilities."
+msgstr ""
+"MarkoGebra je středoškolská maturitní práce studenta technického lycea v "
+"Olomouci. Cílem práce je vytvořit uživatelsky jednoduše ovladatelné a "
+"pochopitelné prostředí pro tvorbu různých druhů grafů, které má ovšem velmi "
+"rozsáhlé možnosti."
+
+#: .\docs\templates\about.html:12
+msgid ""
+"The project is written in Python programming language using mainly Tkinter, "
+"matplotlib and numpy libraries. A simple sqllite database then runs on the "
+"backend. The project is publicly available"
+msgstr ""
+"Projekt je napsaný v jazyce python za využití převážně knihoven Tkinter, "
+"matplotlib a numpy. Na backendu poté běží jednoduchá sqllite databáze. "
+"Projekt je veřejně k nahlédnutí"
+
+#: .\docs\templates\about.html:13
+msgid "here"
+msgstr "zde"
+
+#: .\docs\templates\about.html:14
+msgid ""
+"Although the application tries to be as simple and user-friendly as "
+"possible, so do some functions may not be completely clear at first glance. "
+"This documetation should be used for clarification of this functions. Also "
+"available discussion may be helpful."
+msgstr ""
+"I když se aplikace snaží být co nejjednodušší a uživatelsky přátelská, tak "
+"některé funkce mohou být ne vždy úplně jasné na první pohled. K objasnění by "
+"měla sloužit tato dokumentace, popřípadě může být nápomocná i dostupná "
+"diskuze."
+
+#: .\docs\templates\about.html:17
+msgid "I hope you enjoy the app."
+msgstr "Doufám, že se Vám bude aplikace líbit."
+
+#: .\docs\templates\about.html:20
+msgid "Kindest regards, Mark"
+msgstr "Marek"
 
 #~ msgid "Test of translation"
 #~ msgstr "Zkouška překladu"

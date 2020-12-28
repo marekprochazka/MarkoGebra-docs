@@ -2,15 +2,23 @@
 {% load i18n %}
 
 {% block content %}
-<h2>{% trans 'About' %}</h2>
-    <form action="{% url 'set_language' %}" method="post">
-        {% csrf_token %}
-        <input type="hidden" name="language" value="en">
-        <input type="submit" value="En">
-    </form>
-    <form action="{% url 'set_language' %}" method="post">
-        {% csrf_token %}
-        <input type="hidden" name="language" value="cs">
-        <input type="submit" value="Cs">
-    </form>
+    <h1 class="mt-15 text-center">
+        {% trans 'About' %}
+    </h1>
+    <div class="px-7per pt-4 about--text">
+        <p>
+            {% trans 'MarkoGebra is a high school graduation project of a technical lyceum student in Czech city Olomouc. The goal of the project is to create a user-friendly and understandable environment to create different types of graphs, which, however, has very extensible possibilities.' %}
+        </p>
+        <p>
+            {% trans 'The project is written in Python programming language using mainly Tkinter, matplotlib and numpy libraries. A simple sqllite database then runs on the backend. The project is publicly available' %}
+            <a href="https://github.com/marekprochazka/V2_MarkoGebra">{% trans 'here' %}</a>
+            {% trans 'Although the application tries to be as simple and user-friendly as possible, so do some functions may not be completely clear at first glance. This documetation should be used for clarification of this functions. Also available discussion may be helpful.' %}
+        </p>
+        <p>
+            {% trans 'I hope you enjoy the app.' %}
+        </p>
+        <p class="text-right">
+            - {% trans 'Kindest regards, Mark' %}
+        </p>
+    </div>
 {% endblock %}
