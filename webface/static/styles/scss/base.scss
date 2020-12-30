@@ -16,3 +16,9 @@ body{
   color: $color--white;
   padding: 35px 35px;
 }
+
+.text--normal{
+  line-height: 1.7rem;
+  text-align: justify;
+  font-size: $font--size__medium-small;
+}
