@@ -43,7 +43,7 @@
     V pravém horním rohu aplikace se nachází 4 tlačítka: Styl grafu, smazat vše, uložení jako obrázek a nápověda odkazující na tuto dokumentaci.
     Tlačítko "Styl grafu" je selektorem, který umožňuje uživateli vybrat styl pozadí grafu. Styly se liší barvami, přítomností mřížky, nebo třeba velikostí popisných os. 
     Tlačítko smazat vše, jak již napovídá název smaže všechny Uživatelské vstupy v grafu a ponechá graf naprosto prázdným.
-    Tlačítko Uložení jako obrázek otevře nové okno zaměřené na ukládání obrázku. Podrobnější vysvětlení viz Funkce:Export do PNG
+    Tlačítko Uložení jako obrázek otevře nové okno zaměřené na ukládání obrázku. Podrobnější vysvětlení viz Export do PNG
     Poslední tlačítko odkazuje přímo na tuto dokumentaci
 
 ### Zápisu nové hodnoty
@@ -60,12 +60,34 @@
 ### Graf
     V neposlení řadě se v pravé spodní části apliakce nachází graf, do kterého se zobrazují všechny zapsané hodnoty.
 
-### Styl grafu
-    Graf může mít několik různých stylů. Každý styl mění vysuální stránku grafu. Ať už se jedná o barvy, jestli bude mít mřížku, nebo ne, nebo jestli graf bude mít popis os.
-
 ### Export do PNG
     Tlačítko 'uložit jako obrázek' otevře nové okno zaměřené na ukládání obrázku. Zde je třeba napsat název budoucího obrázku a určit umístění souboru kliknutím na tlačítko 'umístění'. Poté lze ješě vybrat, zda-li chcete uložit 
     graf i s popisem os.
 
+### Přepinání mezi metodami a ukládání
+
 ## Matematické grafování 
-    Matematické grafování má 2 různé vstupy. Bodový a funkcionální
+    Matematické grafování má 2 různé možnosti vstupy. Bodový a funkcionální. 
+    ### bodové
+    U bodového vstupu uživatel zadává hodnoty x, y a vybírá barvu stisknutím barevného tlačítka (v základu modrého).
+    Hodnotu násleně uloží stiskem tlačítka vložit.
+    ### funkcionální
+    Funkcionální možnost bere na vstup pravou stranu funkce (například: x + 2, x**2)
+    Má specifickou syntaxi podobnou pythonu.
+    Povolená syntaxe: 
+        - sin, cos, tan, ln, pi, e - funkce a konstanty
+        - +, -, *, /, (, ) - operace, závorky
+        - čísla - desetinná čísla využívají desetinnou tečku nikoliv čárku
+        - písmeno 'x' jako proměnná
+
+    Lze zvolit barva stejně jako u bodového vstupu 
+    Uloží se stiskem tlačítka odložit.
+
+    ### nastavení metody 
+    Matematická metoda má 2 speciální nastavení. Nastavení limit a nastavení mřížky. 
+    Nastavení limit mění koncové hodnoty jednotlivých os. V základu je zapnuté automatické aktualizování limit, které zvětší limity po přidání 
+    bodu, který by se jinak zobrazoval mimo graf. 
+    Nastavení mřížky mění barvu, velikost a druh čáry mřížky, pokud je mřížka přítomná v daném stylu grafu. 
+
+    ### Další úpravy v seznamu hodnot 
+    Kromě hodnot, které se nastavují již u vstupu je uživatel schopen v seznamu hodnot upravit i velikost bodu/čáry a také změnit druh bodu/čáry.
