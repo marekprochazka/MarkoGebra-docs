@@ -68,10 +68,10 @@
 
 ## Matematické grafování 
     Matematické grafování má 2 různé možnosti vstupy. Bodový a funkcionální. 
-    ### bodové
+### bodové
     U bodového vstupu uživatel zadává hodnoty x, y a vybírá barvu stisknutím barevného tlačítka (v základu modrého).
     Hodnotu násleně uloží stiskem tlačítka vložit.
-    ### funkcionální
+### funkcionální
     Funkcionální možnost bere na vstup pravou stranu funkce (například: x + 2, x**2)
     Má specifickou syntaxi podobnou pythonu.
     Povolená syntaxe: 
@@ -83,11 +83,11 @@
     Lze zvolit barva stejně jako u bodového vstupu 
     Uloží se stiskem tlačítka odložit.
 
-    ### nastavení metody 
+### nastavení metody 
     Matematická metoda má 2 speciální nastavení. Nastavení limit a nastavení mřížky. 
     Nastavení limit mění koncové hodnoty jednotlivých os. V základu je zapnuté automatické aktualizování limit, které zvětší limity po přidání 
     bodu, který by se jinak zobrazoval mimo graf. 
     Nastavení mřížky mění barvu, velikost a druh čáry mřížky, pokud je mřížka přítomná v daném stylu grafu. 
 
-    ### Další úpravy v seznamu hodnot 
+### Další úpravy v seznamu hodnot 
     Kromě hodnot, které se nastavují již u vstupu je uživatel schopen v seznamu hodnot upravit i velikost bodu/čáry a také změnit druh bodu/čáry.

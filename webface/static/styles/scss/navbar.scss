@@ -54,17 +54,28 @@
     .nav--link {
       font-size: $font--size__medium-small;
       list-style: none;
-      text-align: center;
+      text-align: left;
+      padding-left: 10px;
       padding-bottom: 15px;
-      color: $color--white ;
-      text-shadow: none ;
+      color: $color--white;
+      text-shadow: none;
       text-decoration: none;
       transition: background .8s, color .8s;
       -webkit-transition: background .8s, color .8s;
-      &:hover{
+
+      &:hover {
         color: $color--aqua
       }
+
     }
 
+  }
+}
+
+a[class$="--child"] {
+  font-size: $font--size__small !important;
+  padding-left: 25px !important;
+  &::before{
+    content: "- ";
   }
 }

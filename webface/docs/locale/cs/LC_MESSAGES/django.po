@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-28 20:07+0100\n"
-"PO-Revision-Date: 2020-12-28 20:08+0100\n"
+"POT-Creation-Date: 2021-02-20 12:32+0100\n"
+"PO-Revision-Date: 2021-02-20 12:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -70,8 +70,8 @@ msgid "Kindest regards, Mark"
 msgstr "Marek"
 
 #: .\docs\templates\base.html:21
-msgid "Features"
-msgstr "Funkce"
+msgid "Environment and methods"
+msgstr "Prostředí a metody"
 
 #: .\docs\templates\base.html:22
 msgid "Installation"
@@ -84,6 +84,304 @@ msgstr "Diskuze"
 #: .\docs\templates\base.html:24
 msgid "How to use"
 msgstr "Návod k použití"
+
+#: .\docs\templates\features.html:6
+msgid "Environment"
+msgstr "Prostředí"
+
+#: .\docs\templates\features.html:9
+msgid ""
+"Graphing in the app is divided into 4 methods. Mathematical, Pie, Bar "
+"graphing and Random Noise. The Current graphing method is displayed in the "
+"upper left corner of the app and you can switch to another method by "
+"clicking on it."
+msgstr ""
+"Tvorba grafů je v aplikaci rozdělena na 4 metody. Matematické, Koláčové, "
+"Sloupcové grafování a Náhodný šum. Aktuální metoda je zobrazena v levém "
+"horním rohu. Kliknutím na ni se dá přepnout do jiné metody."
+
+#: .\docs\templates\features.html:10
+msgid ""
+"In the upper right corner of the app there are 4 buttons: Graph style, "
+"delete all, save as image and help referring to this documentation."
+msgstr ""
+"V pravém horním rohu aplikace naleznete 4 tlačítka: Styl grafu, Smazat vše, "
+"uložit jako obrázek a Nápověda."
+
+#: .\docs\templates\features.html:11
+msgid ""
+"In the left part of the window tehre is a space intended for working with "
+"the graph and it's data, in the right part there is a graph."
+msgstr ""
+"V levé části okna se nachází prostor sloužící k práci s grafem a jeho daty. "
+"Napravo se nachází graf."
+
+#: .\docs\templates\features.html:14
+msgid "Graph style"
+msgstr "Styl grafu"
+
+#: .\docs\templates\features.html:17
+msgid ""
+"A graph can have several different style. Each style changes the layout part "
+"of the chart. For example if it would have grid or not, if it will have axes "
+"description of which background color will graph have."
+msgstr ""
+"U grafu si můžete zvolit z několika různých stylů. Každý styl mění určitým "
+"způsobem vzhled grafu. Pro příklad růžné styly mohou, ale nemusí mít mřížku, "
+"mohou mít různé velikosti popisných os a také různé barvy pozadí."
+
+#: .\docs\templates\features.html:20
+msgid "Delete all"
+msgstr "Smazat vše"
+
+#: .\docs\templates\features.html:23
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "        This Button will delete all of the current user's inputs.\n"
+#| "    "
+msgid ""
+"\n"
+"            This Button will delete all of the current user's inputs.\n"
+"        "
+msgstr ""
+"\n"
+" Tlačítko smaže všechny uživatelské vstupy. "
+
+#: .\docs\templates\features.html:28
+msgid "Save as img"
+msgstr "Uložit jako obrázek"
+
+#: .\docs\templates\features.html:31
+msgid ""
+"The 'save as image button' opens a new window for saving the image. here you "
+"need to write the name of the future image and specify the location of the "
+"file by clicking on the 'location' button. You can then decide whether you "
+"want to save the graph with the axis description or without it."
+msgstr ""
+"Funkce 'uložit jako obrázek' otevře nové okno, ve kterém se specifikují "
+"parametry uložení obrázku. Je třeba zadat jméno a lokaci uložení. Je zde "
+"také možnost vypnout popisky os."
+
+#: .\docs\templates\features.html:34
+msgid "Help"
+msgstr "Nápověda"
+
+#: .\docs\templates\features.html:37
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "        Help button will open this documentation.\n"
+#| "    "
+msgid ""
+"\n"
+"            Help button will open this documentation.\n"
+"        "
+msgstr ""
+"\n"
+" Tlačítko nápovědy otevře tuto dokumentaci. "
+
+#: .\docs\templates\features.html:42
+msgid "Graphing methods"
+msgstr "Metody grafování"
+
+#: .\docs\templates\features.html:44
+msgid ""
+"\n"
+"            Each graphic method has it's specific user input, setting a "
+"graph output.\n"
+"        "
+msgstr ""
+"\n"
+" Každá metoda má své specifické uživatelské vstupy, nastavení a výstupy na "
+"grafu. "
+
+#: .\docs\templates\features.html:48
+msgid "Mathematical"
+msgstr "Matematická"
+
+#: .\docs\templates\features.html:50
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "            Mathematical method is divided into two outputs. The course "
+#| "of the function and the point. Result output depends on\n"
+#| "            the input type you will choose in the top left. You can "
+#| "either use first row with inputs for X and Y to get a point in a\n"
+#| "            graph or a second line, where you will write the right part "
+#| "of the function like for example '(x + 2)/2'\n"
+#| "            Functional inputs has some specific syntax similar to python "
+#| "operations, here's the allowed syntax:\n"
+#| "        "
+msgid ""
+"\n"
+"            Mathematical method is divided into two outputs. The course of "
+"the function and the point. Result output\n"
+"            depends on\n"
+"            the input type you will choose in the top left. You can either "
+"use first row with inputs for X and Y to get\n"
+"            a point in a\n"
+"            graph or a second line, where you will write the right part of "
+"the function like for example '(x + 2)/2'\n"
+"            Functional inputs has some specific syntax similar to python "
+"operations, here's the allowed syntax:\n"
+"        "
+msgstr ""
+"\n"
+" Matematická metoda je rozdělena do dvou výstupů. Do průběhu funkce a do "
+"bodového výstupu. Výsledný výstup záleží na typu vstupu, který si zvolíte. "
+"Můžete si vybrat buď první řádek se vstupy X a Y, jejichž výsledkem bude "
+"bod, nebo druhý řádek, kde zapíšete pravou stranu funkce (například 'x+2'). "
+"Funkcionální vstup má svou specifickou syntaxi podobnou jazyku python. Zde "
+"jsou povolené znaky:\n"
+" "
+
+#: .\docs\templates\features.html:60
+msgid "sin, cos, tan, ln, pi, e - functions and constants"
+msgstr "sin, cos, tan, ln, pi, e - funkce a konstanty"
+
+#: .\docs\templates\features.html:61
+msgid "+, -, *, /, (, ) - operations, brackets"
+msgstr "+, -, *, /, (, ) - operace a závorky"
+
+#: .\docs\templates\features.html:62
+msgid "numbers - floating numbers are written with dot, not a comma"
+msgstr "čísla - desetinná čísla se píší s desetinnou tečkou, nikoliv čárkou"
+
+#: .\docs\templates\features.html:63
+msgid "letter 'x' represents variable"
+msgstr "písmeno 'x' reprezentuje neznámou"
+
+#: .\docs\templates\features.html:66
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "        The mathematical method has two extra settings.\n"
+#| "        The first one is limiting values of each axis, which is in the "
+#| "default set to auto set.\n"
+#| "        And the second one is the grid setting where you can change the "
+#| "line type, color, and size\n"
+#| "        of the graph's grid.\n"
+#| "        "
+msgid ""
+"\n"
+"                The mathematical method has two extra settings.\n"
+"                The first one is limiting values of each axis, which is in "
+"the default set to auto set.\n"
+"                And the second one is the grid setting where you can change "
+"the line type, color, and size\n"
+"                of the graph's grid.\n"
+"            "
+msgstr ""
+"\n"
+"        Matematická metoda má dvě speciální nastavení.\n"
+"        První je nastavení limit os X a Y, které je v základu nataveno do "
+"režimu 'auto'.\n"
+"       Druhé nastavení je nastavení mřížky grafu. Nastavit lze druh čáry, "
+"barvu a tloušťku čáry. "
+
+#: .\docs\templates\features.html:74
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "        In the list view, you can edit values from inputs and also two "
+#| "extra values,\n"
+#| "        which are size and type of line/point.\n"
+#| "        "
+msgid ""
+"\n"
+"                In the list view, you can edit values from inputs and also "
+"two extra values,\n"
+"                which are size and type of line/point.\n"
+"            "
+msgstr ""
+"\n"
+"V seznamu hodnot lze upravovat hodnoty vstupní a velikost a značku výstupní "
+"čáry/bodu. "
+
+#: .\docs\templates\features.html:80
+msgid "Pie"
+msgstr "Koláčový graf"
+
+#: .\docs\templates\features.html:82
+msgid ""
+"\n"
+"            The output of the next method is the values represented in the "
+"pie chart.\n"
+"            As an input, you will write the name and numeric value of the "
+"pie slice. You can also choose a color or keep\n"
+"            the default blue.\n"
+"            This method doesn't have any special setting.\n"
+"            In the list view, you can edit input values and explode value "
+"which cause the pie slice to stump from the\n"
+"            chart.\n"
+"        "
+msgstr ""
+"\n"
+"Výstupem následující metody jsou vstupní hodnoty zobrazeny v koláčovém "
+"grafu.\n"
+"Jako vstup zadáte jméno a číselnou hodnotu jedné výseče koláčového grafu. "
+"Můžete také nastavit barvu nebo ponechat základní modrou.\n"
+"Tato metoda nemá žádná speciální nastavení\n"
+"V seznamu výstupů můžete upravovat vstupní hodnoty a hodnotu výstupu "
+"výřezu.  "
+
+#: .\docs\templates\features.html:92
+msgid "Bar"
+msgstr "Sloupcový graf"
+
+#: .\docs\templates\features.html:94
+msgid ""
+"\n"
+"            Another method is called bar. In the output, the input values "
+"will be organized into a bar graph.\n"
+"            As an input, you will write the name and numeric value of the "
+"bar column. You can also choose a color or\n"
+"            keep the default blue.\n"
+"            This method doesn't have any special setting.\n"
+"            In the list view, you can edit input values and width value "
+"which sets the width of the bar column.\n"
+"        "
+msgstr ""
+"\n"
+"Výstupem této metody je sloupcový graf do kterého jsou zaneseny jednotlivé "
+"uživatelské vstupy.\n"
+"Na vstupu zadáte název sloupce a jeho numerickou hodnotu. Můžete také určit "
+"barvu nebo ponechat základní modrou.\n"
+"Tato metoda nemá žádné unikátní nastavení.\n"
+"V seznamu výstupů můžete upravovat vstupní hodnoty a šířku jednotlivých "
+"sloupců.  "
+
+#: .\docs\templates\features.html:102
+msgid "Noise"
+msgstr "Náhodný šum"
+
+#: .\docs\templates\features.html:104
+msgid ""
+"\n"
+"            The last method is random noise. As input, you will choose the "
+"dispersion of the noise and the number of\n"
+"            points in it. You will create one by clicking on generate "
+"button. To get a different generation with the\n"
+"            same dispersion and count values you can just click generate "
+"again. When you're satisfied with the\n"
+"            generation you can lock it with the lock button.\n"
+"            This method has one special setting. Same as in Math method you "
+"can edit grid here.\n"
+"            In the list view, you can edit input values and the type of "
+"noise points.\n"
+"        "
+msgstr ""
+"\n"
+"Poslední metodou je náhodný šum. Jako vstup zvolíte rozptyl šumu a počet "
+"bodů v něm. Šum vytvoříte kliknutím na tlačítko generovat. Chcete-li jinou "
+"generaci se stejným rozptylem a množstvím bodů, stačí kliknout znovu na "
+"generovat. Pokud jste s generací spokojeni, můžete ji zamknout pomocí "
+"tlačítka uzamknout.\n"
+"V zobrazení seznamu můžete upravit vstupní hodnoty a typ bodů šumu. "
+
+#~ msgid "Features"
+#~ msgstr "Funkce"
 
 #~ msgid "Test of translation"
 #~ msgstr "Zkouška překladu"

@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-    <h1 class="mt-15 text-center">
+    <h1 class="mt-15 text-center" id="environment">
         {% trans 'Environment' %}
     </h1>
     <div class="px-7per pt-2 text--normal">
@@ -11,15 +11,105 @@
         <p>{% trans "In the left part of the window tehre is a space intended for working with the graph and it's data, in the right part there is a graph." %}</p>
     </div>
     <h3 class="px-7per mt-30 text-left">
-    {% trans 'Graph style' %}
+        {% trans 'Graph style' %}
     </h3>
     <div class="px-7per pt-2 text--normal">
-          <p>{% trans 'A graph can have several different style. Each style changes the layout part of the chart. For example if it would have grid or not, if it will have axes description of which background color will graph have.' %}</p>
+        <p>{% trans 'A graph can have several different style. Each style changes the layout part of the chart. For example if it would have grid or not, if it will have axes description of which background color will graph have.' %}</p>
     </div>
     <h3 class="px-7per mt-15 text-left">
-    {% trans 'Save as img' %}
+        {% trans 'Delete all' %}
+    </h3>
+    <div class="px-7per pt-2 text--normal"><p>
+        {% blocktrans %}
+            This Button will delete all of the current user's inputs.
+        {% endblocktrans %}
+    </p></div>
+    <h3 class="px-7per mt-15 text-left">
+        {% trans 'Save as img' %}
     </h3>
     <div class="px-7per pt-2 text--normal">
         <p>{% trans "The 'save as image button' opens a new window for saving the image. here you need to write the name of the future image and specify the location of the file by clicking on the 'location' button. You can then decide whether you want to save the graph with the axis description or without it." %}</p>
     </div>
+    <h3 class="px-7per mt-15 text-left">
+        {% trans 'Help' %}
+    </h3>
+    <div class="px-7per pt-2 text--normal"><p>
+        {% blocktrans %}
+            Help button will open this documentation.
+        {% endblocktrans %}
+    </p></div>
+
+    <h1 class="mt-15 text-center" id="graphingMethods">{% trans 'Graphing methods' %}</h1>
+    <div class="px-7per pt-2 text--normal"><p class="text-center">
+        {% blocktrans %}
+            Each graphic method has it's specific user input, setting a graph output.
+        {% endblocktrans %}
+    </p></div>
+    <h3 class="px-7per mt-15 text-left" id="mathematical--child">{% trans 'Mathematical' %}</h3>
+    <div class="px-7per pt-2 text--normal"><p>
+        {% blocktrans %}
+            Mathematical method is divided into two outputs. The course of the function and the point. Result output
+            depends on
+            the input type you will choose in the top left. You can either use first row with inputs for X and Y to get
+            a point in a
+            graph or a second line, where you will write the right part of the function like for example '(x + 2)/2'
+            Functional inputs has some specific syntax similar to python operations, here's the allowed syntax:
+        {% endblocktrans %}
+    </p>
+        <ul>
+            <li>{% trans 'sin, cos, tan, ln, pi, e - functions and constants' %}</li>
+            <li>{% trans '+, -, *, /, (, ) - operations, brackets' %}</li>
+            <li>{% trans 'numbers - floating numbers are written with dot, not a comma' %}</li>
+            <li>{% trans "letter 'x' represents variable" %}</li>
+        </ul>
+        <p>
+            {% blocktrans %}
+                The mathematical method has two extra settings.
+                The first one is limiting values of each axis, which is in the default set to auto set.
+                And the second one is the grid setting where you can change the line type, color, and size
+                of the graph's grid.
+            {% endblocktrans %}
+        </p>
+        <p>
+            {% blocktrans %}
+                In the list view, you can edit values from inputs and also two extra values,
+                which are size and type of line/point.
+            {% endblocktrans %}
+        </p>
+    </div>
+    <h3 class="px-7per mt-15 text-left" id="pie--child">{% trans 'Pie' %}</h3>
+    <div class="px-7per pt-2 text--normal"><p>
+        {% blocktrans %}
+            The output of the next method is the values represented in the pie chart.
+            As an input, you will write the name and numeric value of the pie slice. You can also choose a color or keep
+            the default blue.
+            This method doesn't have any special setting.
+            In the list view, you can edit input values and explode value which cause the pie slice to stump from the
+            chart.
+        {% endblocktrans %}
+    </p>
+    </div>
+    <h3 class="px-7per mt-15 text-left" id="bar--child">{% trans 'Bar' %}</h3>
+    <div class="px-7per pt-2 text--normal"><p>
+        {% blocktrans %}
+            Another method is called bar. In the output, the input values will be organized into a bar graph.
+            As an input, you will write the name and numeric value of the bar column. You can also choose a color or
+            keep the default blue.
+            This method doesn't have any special setting.
+            In the list view, you can edit input values and width value which sets the width of the bar column.
+        {% endblocktrans %}
+    </p>
+    </div><h3 class="px-7per mt-15 text-left" id="noise--child">{% trans 'Noise' %}</h3>
+    <div class="px-7per pt-2 text--normal"><p>
+        {% blocktrans %}
+            The last method is random noise. As input, you will choose the dispersion of the noise and the number of
+            points in it. You will create one by clicking on generate button. To get a different generation with the
+            same dispersion and count values you can just click generate again. When you're satisfied with the
+            generation you can lock it with the lock button.
+            This method has one special setting. Same as in Math method you can edit grid here.
+            In the list view, you can edit input values and the type of noise points.
+        {% endblocktrans %}
+    </p>
+    </div>
+    {{ test }}
 {% endblock %}

@@ -25,17 +25,17 @@
     </div>
 </nav>
 <div class="main">
-    <nav class="navbar--vertical">
+    <nav class="navbar--vertical pt-5">
         <div class="navbar--nav">
-            <a class="nav--link" href="#">obsah</a>
-            <a class="nav--link" href="#">obsah</a>
-            <a class="nav--link" href="#">obsah</a>
-            <a class="nav--link" href="#">obsah</a>
+            {% for name,id in side_nav.items %}
+            <a class="nav--link {{ id }}" href="#{{ id }}">{{ name }}</a>
+            {% endfor %}
         </div>
     </nav>
     <div class="base--content">
             {% block content %}
         {% endblock %}
+    <p style="margin-top: 150px"> .</p>
         </div>
 </div>
 
