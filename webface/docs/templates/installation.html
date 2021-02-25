@@ -1,5 +1,48 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block content %}
-<h2>Installation</h2>
+    <h1 class="mt-15 text-center">{% trans "How to install and run" %}</h1>
+    <div class="basic--textContent">
+        <ol class="installation--list">
+            <li>{% trans "Go to" %} <a href="https://github.com/marekprochazka/V2_MarkoGebra" target="_blank">{%trans "the project's repository." %}</a> </li>
+            <li>{% trans 'Clone/download repository.' %}</li>
+        </ol>
+    </div>
+    <h3 class="px-7per mt-30 text-left">
+        {% trans "If you're using windows" %}
+    </h3>
+    <div class="basic--textContent">
+
+        <ol class="installation--list">
+            <ol>{% trans "Open a command prompt and navigate to the project's folder." %}</ol>
+            <ol>{% trans "Run 'init.bat' in prompt." %}</ol>
+            <ol>{% trans "To run the app type 'python app.py'." %}</ol>
+        </ol>
+    </div>
+    <h3 class="px-7per mt-30 text-left">
+        {% trans "If you're using another OS" %}
+    </h3>
+     <div class="basic--textContent">
+         <ol class="installation--list">
+             <li>{% trans "Navigate to the project's folder with a command prompt." %}</li>
+             <li>{% trans "Create a virtual environment. " %}</li>
+             <li>{% trans "Install 'requirements.txt'." %}</li>
+             <li>{% trans "Navigate to the Data folder." %}</li>
+             <li>{% trans "Type 'python startDB.py'." %}</li>
+             <li>{% trans "In the Data folder create 'math_limits.json' with empty dict '{}'." %}</li>
+             <li>{% trans "In the Data folder create a 'graphstyle.txt' file and write a 'seaborn' to it without making a new line." %}</li>
+             <li>{% trans "Return to root folder." %}</li>
+             <li>{% trans "To run the app type 'python app.py'." %}</li>
+         </ol>
+     </div>
+     <h3 class="px-7per mt-30 text-left">
+        {% trans "Note" %}
+     </h3>
+    <div class="basic--textContent">
+         <ul class="installation--list">
+             <li>{% trans "Please make sure you've got installed python on version 3.7.9. and you have it set as the Path variable." %}</li>
+             <li>{% trans "If you want to run the app after it's already installed you also need to activate the virtual environment of the app or install the requirements globally. " %}</li>
+         </ul>
+    </div>
 {% endblock %}

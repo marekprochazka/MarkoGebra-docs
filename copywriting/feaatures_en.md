@@ -35,3 +35,17 @@ This Button will delete all of the current user's inputs.
   - +, -, *, /, (, ) - operations, brackets
   - numbers - floating numbers are written with dot, not a comma
   - letter 'x' represents variable
+
+  With each point and function input, you can choose what color you want to have in the output.
+
+  ## Special settings of the method
+
+  The mathematical method has two extra settings. 
+  The first one is limiting values of each axis, which is in the default set to auto set. 
+  And the second one is the grid setting where you can change the line type, color, and size 
+  of the graph's grid. 
+
+  ## List view
+
+  In the list view, you can edit values from inputs and also two extra values,
+   which are size and type of line/point.

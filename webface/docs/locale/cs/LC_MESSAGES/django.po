@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-20 12:32+0100\n"
-"PO-Revision-Date: 2021-02-20 12:41+0100\n"
+"POT-Creation-Date: 2021-02-25 09:23+0100\n"
+"PO-Revision-Date: 2021-02-25 09:24+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Language: cs\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#: .\docs\templates\about.html:6 .\docs\templates\base.html:20
+#: .\docs\templates\about.html:6 .\docs\templates\base.html:21
 msgid "About"
 msgstr "O aplikaci"
 
@@ -69,23 +69,23 @@ msgstr "Doufám, že se Vám bude aplikace líbit."
 msgid "Kindest regards, Mark"
 msgstr "Marek"
 
-#: .\docs\templates\base.html:21
+#: .\docs\templates\base.html:22
 msgid "Environment and methods"
 msgstr "Prostředí a metody"
 
-#: .\docs\templates\base.html:22
+#: .\docs\templates\base.html:23
 msgid "Installation"
 msgstr "Instalace"
 
-#: .\docs\templates\base.html:23
+#: .\docs\templates\base.html:24
 msgid "Discussion"
 msgstr "Diskuze"
 
-#: .\docs\templates\base.html:24
+#: .\docs\templates\base.html:25
 msgid "How to use"
 msgstr "Návod k použití"
 
-#: .\docs\templates\features.html:6
+#: .\docs\templates\features.html:6 .\docs\views.py:9
 msgid "Environment"
 msgstr "Prostředí"
 
@@ -135,11 +135,6 @@ msgid "Delete all"
 msgstr "Smazat vše"
 
 #: .\docs\templates\features.html:23
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "        This Button will delete all of the current user's inputs.\n"
-#| "    "
 msgid ""
 "\n"
 "            This Button will delete all of the current user's inputs.\n"
@@ -168,11 +163,6 @@ msgid "Help"
 msgstr "Nápověda"
 
 #: .\docs\templates\features.html:37
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "        Help button will open this documentation.\n"
-#| "    "
 msgid ""
 "\n"
 "            Help button will open this documentation.\n"
@@ -181,7 +171,7 @@ msgstr ""
 "\n"
 " Tlačítko nápovědy otevře tuto dokumentaci. "
 
-#: .\docs\templates\features.html:42
+#: .\docs\templates\features.html:42 .\docs\views.py:10
 msgid "Graphing methods"
 msgstr "Metody grafování"
 
@@ -196,23 +186,11 @@ msgstr ""
 " Každá metoda má své specifické uživatelské vstupy, nastavení a výstupy na "
 "grafu. "
 
-#: .\docs\templates\features.html:48
+#: .\docs\templates\features.html:48 .\docs\views.py:11
 msgid "Mathematical"
 msgstr "Matematická"
 
 #: .\docs\templates\features.html:50
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "            Mathematical method is divided into two outputs. The course "
-#| "of the function and the point. Result output depends on\n"
-#| "            the input type you will choose in the top left. You can "
-#| "either use first row with inputs for X and Y to get a point in a\n"
-#| "            graph or a second line, where you will write the right part "
-#| "of the function like for example '(x + 2)/2'\n"
-#| "            Functional inputs has some specific syntax similar to python "
-#| "operations, here's the allowed syntax:\n"
-#| "        "
 msgid ""
 "\n"
 "            Mathematical method is divided into two outputs. The course of "
@@ -253,16 +231,6 @@ msgid "letter 'x' represents variable"
 msgstr "písmeno 'x' reprezentuje neznámou"
 
 #: .\docs\templates\features.html:66
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "        The mathematical method has two extra settings.\n"
-#| "        The first one is limiting values of each axis, which is in the "
-#| "default set to auto set.\n"
-#| "        And the second one is the grid setting where you can change the "
-#| "line type, color, and size\n"
-#| "        of the graph's grid.\n"
-#| "        "
 msgid ""
 "\n"
 "                The mathematical method has two extra settings.\n"
@@ -281,13 +249,6 @@ msgstr ""
 "barvu a tloušťku čáry. "
 
 #: .\docs\templates\features.html:74
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "        In the list view, you can edit values from inputs and also two "
-#| "extra values,\n"
-#| "        which are size and type of line/point.\n"
-#| "        "
 msgid ""
 "\n"
 "                In the list view, you can edit values from inputs and also "
@@ -299,7 +260,7 @@ msgstr ""
 "V seznamu hodnot lze upravovat hodnoty vstupní a velikost a značku výstupní "
 "čáry/bodu. "
 
-#: .\docs\templates\features.html:80
+#: .\docs\templates\features.html:80 .\docs\views.py:12
 msgid "Pie"
 msgstr "Koláčový graf"
 
@@ -326,7 +287,7 @@ msgstr ""
 "V seznamu výstupů můžete upravovat vstupní hodnoty a hodnotu výstupu "
 "výřezu.  "
 
-#: .\docs\templates\features.html:92
+#: .\docs\templates\features.html:92 .\docs\views.py:13
 msgid "Bar"
 msgstr "Sloupcový graf"
 
@@ -352,7 +313,7 @@ msgstr ""
 "V seznamu výstupů můžete upravovat vstupní hodnoty a šířku jednotlivých "
 "sloupců.  "
 
-#: .\docs\templates\features.html:102
+#: .\docs\templates\features.html:102 .\docs\views.py:14
 msgid "Noise"
 msgstr "Náhodný šum"
 
@@ -379,6 +340,101 @@ msgstr ""
 "generovat. Pokud jste s generací spokojeni, můžete ji zamknout pomocí "
 "tlačítka uzamknout.\n"
 "V zobrazení seznamu můžete upravit vstupní hodnoty a typ bodů šumu. "
+
+#: .\docs\templates\installation.html:5
+msgid "How to install and run"
+msgstr "Instalace a spuštění"
+
+#: .\docs\templates\installation.html:8
+msgid "Go to"
+msgstr "Otevřete"
+
+#: .\docs\templates\installation.html:8
+msgid "the project's repository."
+msgstr "projektový repositář."
+
+#: .\docs\templates\installation.html:9
+msgid "Clone/download repository."
+msgstr "Naklonujte/stáhněte repositář."
+
+#: .\docs\templates\installation.html:13
+msgid "If you're using windows"
+msgstr "Pokud používáte windows"
+
+#: .\docs\templates\installation.html:18
+msgid "Open a command prompt and navigate to the project's folder."
+msgstr "Otevřete příkazový řádek a přesuňte se do složky projektu."
+
+#: .\docs\templates\installation.html:19
+msgid "Run 'init.bat' in prompt."
+msgstr "V příkazové řádce spusťte soubor 'init.bat'."
+
+#: .\docs\templates\installation.html:20 .\docs\templates\installation.html:36
+msgid "To run the app type 'python app.py'."
+msgstr "Pro zpuštění aplikace napište do příkazové řádky 'python app.py'."
+
+#: .\docs\templates\installation.html:24
+msgid "If you're using another OS"
+msgstr "Pokud používáte jiný operační systém"
+
+#: .\docs\templates\installation.html:28
+msgid "Navigate to the project's folder with a command prompt."
+msgstr "Za pomocí příkazového řádku se přesuňte do složky projektu."
+
+#: .\docs\templates\installation.html:29
+msgid "Create a virtual environment. "
+msgstr "Vytvořte pythonovské virtuální prostředí. "
+
+#: .\docs\templates\installation.html:30
+msgid "Install 'requirements.txt'."
+msgstr "Nainstalujte 'requirements.txt'."
+
+#: .\docs\templates\installation.html:31
+msgid "Navigate to the Data folder."
+msgstr "Přesuňte se do podsložky Data."
+
+#: .\docs\templates\installation.html:32
+msgid "Type 'python startDB.py'."
+msgstr "Spusťte 'python startDB.py'."
+
+#: .\docs\templates\installation.html:33
+msgid "In the Data folder create 'math_limits.json' with empty dict '{}'."
+msgstr ""
+"Ve složce Data vytvořte soubor 'math_limit.json', jejímž obsahem bude "
+"prázdný slovník '{}'."
+
+#: .\docs\templates\installation.html:34
+msgid ""
+"In the Data folder create a 'graphstyle.txt' file and write a 'seaborn' to "
+"it without making a new line."
+msgstr ""
+"Ve složce Data vytvořte soubor 'graphstyle.txt' a zapište do něj "
+"'seaborn' (bez odřádkování)."
+
+#: .\docs\templates\installation.html:35
+msgid "Return to root folder."
+msgstr "Vraťte se do hlavní složky."
+
+#: .\docs\templates\installation.html:40
+msgid "Note"
+msgstr "Poznámka"
+
+#: .\docs\templates\installation.html:44
+msgid ""
+"Please make sure you've got installed python on version 3.7.9. and you have "
+"it set as the Path variable."
+msgstr ""
+"Ujistěte se prosím, že máte nainstalovaný python ve verzi 3.7.9. a že ho "
+"máte nastavený v proměnách prostředí (Path)."
+
+#: .\docs\templates\installation.html:45
+msgid ""
+"If you want to run the app after it's already installed you also need to "
+"activate the virtual environment of the app or install the requirements "
+"globally. "
+msgstr ""
+"Aktivovat virtuální prostředí je potřeba před každým spuštěním aplikace. "
+"Alternativní řešení je nainstalovat si requirements.txt globálně. "
 
 #~ msgid "Features"
 #~ msgstr "Funkce"

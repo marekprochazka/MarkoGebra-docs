@@ -22,3 +22,17 @@ body{
   text-align: justify;
   font-size: $font--size__medium-small;
 }
+
+.endDummy{
+  margin-top: 150px;
+  color: $color--gray;
+}
+
+.basic--textContent {
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: .5rem;
+  line-height: 1.7rem;
+  text-align: justify;
+  font-size: $font--size__medium-small;
+}
