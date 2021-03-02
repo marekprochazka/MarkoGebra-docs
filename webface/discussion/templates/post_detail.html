@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+
+    <p>{{ post.id }}</p>
+    <p>{{ post.content }}</p>
+    {% for comment in comments %}
+        <h1>{{ comment.content }}</h1>
+    {% endfor %}
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="content">
+        <input type="text" name="author">
+        <input type="submit">
+    </form>
+
+    {{ error }}
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+
+<h1>Toto je list příspěvků</h1>
+
+    {% for post in posts %}
+        <a href="{% url "discussion:detail" post_id=post.id %}"><div>
+            <p>{{ post.title }}</p>
+            <p>{{ post.date }}</p>
+            <p>{{ post.author }}</p>
+        </div></a>
+    {% endfor %}
+
+{% endblock %}

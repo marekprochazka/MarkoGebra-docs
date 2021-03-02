@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'docs.apps.DocsConfig'
+    'docs.apps.DocsConfig',
+    'discussion.apps.DiscussionConfig'
 
 ]
 

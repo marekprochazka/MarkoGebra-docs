@@ -17,11 +17,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+#: .\discussion\models.py:8
+msgid "title"
+msgstr ""
 
-#: .\webface\settings.py:126
-msgid "Czech"
-msgstr "Čeština"
+#: .\discussion\models.py:9 .\discussion\models.py:21
+msgid "content"
+msgstr ""
 
-#: .\webface\settings.py:127
-msgid "English"
-msgstr "Angličtina"
+#: .\discussion\models.py:10 .\discussion\models.py:22
+msgid "author"
+msgstr ""
+
+#: .\discussion\models.py:11 .\discussion\models.py:23
+msgid "date"
+msgstr ""
+
+#: .\discussion\models.py:14
+msgid "Post"
+msgstr ""
+
+#: .\discussion\models.py:15
+msgid "Posts"
+msgstr ""
+
+#: .\discussion\models.py:26
+msgid "Comment"
+msgstr ""
+
+#: .\discussion\models.py:27
+msgid "Comments"
+msgstr ""
