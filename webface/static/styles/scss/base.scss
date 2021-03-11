@@ -1,29 +1,49 @@
-body{
+body {
   background-color: $color--gray !important;
   font-family: $font--main !important;
 }
-.main{
+
+.main {
   position: relative;
   display: flex;
   height: 90%;
 }
-.base--content{
+
+h1 {
+  background-color: $color--black;
+  color: $color--aqua;
+  border: 1px solid $color--aqua;
+  text-align: center;
+}
+
+.base--content {
   position: relative;
-  left:10%;
-  top:8%;
+  left: 10%;
+  top: 8%;
   height: auto;
   width: 90%;
   color: $color--white;
   padding: 35px 35px;
 }
 
-.text--normal{
+.text--large {
+  line-height: 1.9rem;
+  text-align: justify;
+  font-size: $font--size__medium-large;
+}
+
+.text--normal {
   line-height: 1.7rem;
   text-align: justify;
   font-size: $font--size__medium-small;
 }
 
-.endDummy{
+.text--small {
+  line-height: 0.5rem;
+  font-size: $font--size__small;
+}
+
+.endDummy {
   margin-top: 150px;
   color: $color--gray;
 }
@@ -35,4 +55,29 @@ body{
   line-height: 1.7rem;
   text-align: justify;
   font-size: $font--size__medium-small;
+}
+
+.btn {
+  background-color: $color--black;
+  border: none;
+  color: $color--aqua;
+
+  &:active, &:hover {
+    background-color: $color--aqua;
+    color: $color--black;
+    border: none !important;
+    box-shadow: none;
+  }
+}
+
+.myForm, .myForm:active, .myForm:hover, .myForm:visited {
+  input, textarea {
+    background-color: $color--black !important;
+    color: $color--white !important;
+    border: 1px solid $color--aqua !important;
+  }
+
+  label {
+    color: $color--aqua !important;
+  }
 }

@@ -1,0 +1,54 @@
+.cards {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  .card {
+    width: 250px;
+    margin: 15px;
+    border:  1px solid $color--aqua;
+    .card-header {
+      background-color: $color--black;
+      color: $color--aqua;
+    }
+    .card-body {
+      background-color: $color--gray;
+      color: $color--white;
+    }
+  }
+}
+
+.postdetail{
+  margin-bottom: 65px;
+
+  .postdetail--content{
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .postdetail--break{
+    background-color: $color--aqua;
+    width: 90%;
+  }
+}
+
+.postcomments{
+  .postcomments--comment{
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+
+.postform{
+  width: 60%;
+  .postform--contentInput{
+    height: 150px;
+  }
+}
+.discussion-buttonCreate{
+  height: 50px;
+  line-height: 2.2rem;
+}
+
+.postform-errorText{
+  color: $color--aqua;
+}

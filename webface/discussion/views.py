@@ -63,4 +63,4 @@ class postCreateView(View):
             new_post = Post(title=title, content=content, author=author)
             new_post.save()
             return redirect("discussion:list")
-        return render(request, self.template_name, {"error": "all fields required"})
+        return render(request, self.template_name, {"error": _("All fields are required!")})

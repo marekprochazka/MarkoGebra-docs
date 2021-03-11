@@ -2,19 +2,52 @@
 {% load i18n %}
 
 {% block content %}
+    <div class="postdetail px-7per text-left">
+        <div class="postdetail--title">
+            <h1 class="mt-15 text-center">{{ post.title }}</h1>
 
-    <p>{{ post.id }}</p>
-    <p>{{ post.content }}</p>
-    {% for comment in comments %}
-        <h1>{{ comment.content }}</h1>
-    {% endfor %}
+        </div>
+        <div class="postdetail--content">
+            <p class="px-7per pt-2 text--large">{{ post.content }}</p>
+        </div>
+        <hr class="postdetail--break">
+        <div class="postdetail--footer">
+            <p class="px-7per text--small">{{ post.author }}</p>
+            <p class="px-7per text--small">{{ post.date }}</p>
+        </div>
 
-    <form action="" method="post">
-        {% csrf_token %}
-        <input type="text" name="content">
-        <input type="text" name="author">
-        <input type="submit">
-    </form>
+    </div>
+
+    <div class="postcomments px-7per text-left">
+        <h3 class="postcomments--title mb-20">{% trans 'Comments' %}:</h3>
+        {% for comment in comments %}
+            <div class="postcomments--comment">
+                <p class="text--normal px-7per">{{ comment.content }}</p>
+                <p class="text--small px-7per">- {{ comment.author }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+
+    <div class="postform px-7per">
+        <h3 class="postform--title mb-20">{% trans 'New comment' %}:</h3>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="form-floating mb-3 myForm">
+                <textarea type="text" class="form-control postform--contentInput " id="floatingCommentInput"
+                          name="content"
+                          placeholder="{% trans 'Comments content...' %}"> </textarea>
+                <label for="floatingCommentInput">{% trans 'Content' %}:</label>
+            </div>
+            <div class="form-floating myForm">
+                <input type="text" class="form-control" id="floatingCommentName" name="author"
+                       placeholder="{% trans 'Your name...' %}">
+                <label for="floatingCommentName">{% trans 'Your name' %}:</label>
+            </div>
+            <input class="btn btn-primary mt-15" type="submit">
+        </form>
+    </div>
+
 
     {{ error }}
 

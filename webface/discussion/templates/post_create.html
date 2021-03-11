@@ -3,13 +3,31 @@
 
 {% block content %}
 
-    <form action="" method="post">
-    {% csrf_token %}
-        <input type="text" name="title">
-        <input type="text" name="content">
-        <input type="text" name="author">
-        <input type="submit" value="submit">
-    </form>
-    {{ error }}
+
+    <div class="postform px-7per">
+        <h3 class="postform--title mb-20">{% trans 'New post' %}:</h3>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="form-floating myForm mb-20">
+                <input type="text" class="form-control" id="floatingCommentName" name="title"
+                       placeholder="{% trans 'Your title...' %}">
+                <label for="floatingCommentName">{% trans 'Title' %}:</label>
+            </div>
+            <div class="form-floating mb-3 myForm">
+                <textarea type="text" class="form-control postform--contentInput " id="floatingCommentInput"
+                          name="content"
+                          placeholder="{% trans 'Comments content...' %}"> </textarea>
+                <label for="floatingCommentInput">{% trans 'Content' %}:</label>
+            </div>
+            <div class="form-floating myForm">
+                <input type="text" class="form-control" id="floatingCommentName" name="author"
+                       placeholder="{% trans 'Your name...' %}">
+                <label for="floatingCommentName">{% trans 'Your name' %}:</label>
+            </div>
+            <input class="btn btn-primary mt-15" type="submit">
+        </form>
+    </div>
+
+    <h3 class="postform-errorText px-7per mt-15">{{ error }}</h3>
 
 {% endblock %}
