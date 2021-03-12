@@ -1,0 +1,15 @@
+.languagePicker{
+  display: flex;
+  position: absolute;
+  right: 50px;
+  form {
+    margin-left: 30px;
+    .languagePicker--flagInput{
+      border: 1px $color--white solid;
+    }
+  }
+}
+
+.languagePicker--activeLanguage {
+  box-shadow: 0px 0px 18px 5px $color--aqua;
+}

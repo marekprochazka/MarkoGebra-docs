@@ -1,5 +1,6 @@
 {% load i18n %}
 {% load static %}
+{% get_current_language as LANGUAGE_CODE %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,41 +10,64 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
-{#    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap.min.css' %}">#}
-{#    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap-grid.min.css' %}">#}
-{#    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap-reboot.min.css' %}">#}
+    {#    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap.min.css' %}">#}
+    {#    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap-grid.min.css' %}">#}
+    {#    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap-reboot.min.css' %}">#}
 
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
     <a style="color:aqua" href="{% url 'docs:home' %}">MG</a>
     <div class="navbar--nav">
-      <a class="nav--link" href="{% url 'docs:about' %}">{% trans 'About' %}</a>
-      <a class="nav--link" href="{% url 'docs:features' %}">{% trans 'Environment and methods' %}</a>
-      <a class="nav--link" href="{% url 'docs:installation' %}">{% trans 'Installation' %}</a>
-      <a class="nav--link" href="{% url 'discussion:list' %}">{% trans 'Discussion' %}</a>
-      <a class="nav--link" href="{% url 'docs:how_to_use' %}">{% trans 'How to use' %}</a>
+        <a class="nav--link" href="{% url 'docs:about' %}">{% trans 'About' %}</a>
+        <a class="nav--link" href="{% url 'docs:features' %}">{% trans 'Environment and methods' %}</a>
+        <a class="nav--link" href="{% url 'docs:installation' %}">{% trans 'Installation' %}</a>
+        <a class="nav--link" href="{% url 'discussion:list' %}">{% trans 'Discussion' %}</a>
+        <a class="nav--link" href="{% url 'docs:how_to_use' %}">{% trans 'How to use' %}</a>
+    </div>
+    <div class="languagePicker">
+        <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="language" value="cs">
+            <input class="languagePicker--flagInput {% if LANGUAGE_CODE == "cs" %}languagePicker--activeLanguage {% endif %}"
+                   type="image" src="{% static 'images/cz.png' %}" alt="czech-flag" value="Cs">
+        </form>
+        <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="language" value="en">
+            <input class="languagePicker--flagInput {% if LANGUAGE_CODE == "en" %}languagePicker--activeLanguage {% endif %}"
+                   type="image" src="{% static 'images/gb.png' %}" alt="English-flag" value="En">
+        </form>
+
     </div>
 </nav>
 <div class="main">
     <nav class="navbar--vertical pt-5">
         <div class="navbar--nav">
             {% for name,id in side_nav.items %}
-            <a class="nav--link {{ id }}" href="#{{ id }}">{{ name }}</a>
+                <a class="nav--link {{ id }}" href="#{{ id }}">{{ name }}</a>
             {% endfor %}
         </div>
     </nav>
     <div class="base--content">
-            {% block content %}
+        {% block content %}
         {% endblock %}
-    <p class="endDummy"> .</p>
-        </div>
+
+        <p class="endDummy"> .</p>
+    </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
