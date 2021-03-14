@@ -23,7 +23,12 @@
         {% for comment in comments %}
             <div class="postcomments--comment">
                 <p class="text--normal px-7per">{{ comment.content }}</p>
-                <p class="text--small px-7per">- {{ comment.author }}</p>
+                <p class="text--small px-7per">
+                    - {{ comment.author }}
+                    {% if comment.is_admin %}
+                        <span class="postcomments--admincomment">Admin</span>
+                    {% endif %}
+                </p>
             </div>
         {% endfor %}
     </div>

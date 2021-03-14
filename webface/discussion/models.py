@@ -25,6 +25,7 @@ class Comment(models.Model):
     content = models.TextField(verbose_name=_('content'))
     author = models.CharField(max_length=100, verbose_name=_('author'))
     date = models.DateField(verbose_name=_('date'), auto_now_add=True, blank=True)
+    is_admin = models.BooleanField(verbose_name=_('is admin'), default=False)
 
     def __str__(self):
         return f"{self.author}|{self.date}"

@@ -37,7 +37,10 @@ class postDetailView(View):
         post_id = self.kwargs.get("post_id")
         post = Post.objects.get(id=post_id)
         if comment_author and comment_content and post:
-            new_comment = Comment(post=post, content=comment_content, author=comment_author)
+            if request.user.is_authenticated:
+                new_comment = Comment(post=post, content=comment_content, author=comment_author, is_admin=True)
+            else:
+                new_comment = Comment(post=post, content=comment_content, author=comment_author)
             new_comment.save()
         else:
             context = self.get_context_data()
