@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-11 10:28+0100\n"
+"POT-Creation-Date: 2021-03-21 09:53+0100\n"
 "PO-Revision-Date: 2021-03-11 10:30+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -43,11 +43,15 @@ msgstr "Příspěvek"
 msgid "Posts"
 msgstr "Příspěvky"
 
-#: .\discussion\models.py:34
+#: .\discussion\models.py:28
+msgid "is admin"
+msgstr ""
+
+#: .\discussion\models.py:35
 msgid "Comment"
 msgstr "Komentář"
 
-#: .\discussion\models.py:35 .\discussion\templates\post_detail.html:22
+#: .\discussion\models.py:36 .\discussion\templates\post_detail.html:22
 msgid "Comments"
 msgstr "Komentáře"
 
@@ -65,26 +69,26 @@ msgid "Title"
 msgstr "Titulek"
 
 #: .\discussion\templates\post_create.html:19
-#: .\discussion\templates\post_detail.html:39
+#: .\discussion\templates\post_detail.html:44
 msgid "Comments content..."
 msgstr "Obsah komentáře..."
 
 #: .\discussion\templates\post_create.html:20
-#: .\discussion\templates\post_detail.html:40
+#: .\discussion\templates\post_detail.html:45
 msgid "Content"
 msgstr "Obsah"
 
 #: .\discussion\templates\post_create.html:24
-#: .\discussion\templates\post_detail.html:44
+#: .\discussion\templates\post_detail.html:49
 msgid "Your name..."
 msgstr "Tvé jméno..."
 
 #: .\discussion\templates\post_create.html:25
-#: .\discussion\templates\post_detail.html:45
+#: .\discussion\templates\post_detail.html:50
 msgid "Your name"
 msgstr "Tvé jméno"
 
-#: .\discussion\templates\post_detail.html:33
+#: .\discussion\templates\post_detail.html:38
 msgid "New comment"
 msgstr "Nový komentář"
 
@@ -96,6 +100,6 @@ msgstr "Diskuze"
 msgid "Post detail"
 msgstr "Detail příspěvku"
 
-#: .\discussion\views.py:66
+#: .\discussion\views.py:69
 msgid "All fields are required!"
 msgstr "Všechna pole musí být vyplněna!"

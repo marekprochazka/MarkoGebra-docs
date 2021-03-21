@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-11 10:28+0100\n"
-"PO-Revision-Date: 2021-02-25 09:24+0100\n"
+"POT-Creation-Date: 2021-03-21 09:53+0100\n"
+"PO-Revision-Date: 2021-03-21 09:55+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Language: cs\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#: .\docs\templates\about.html:6 .\docs\templates\base.html:23
+#: .\docs\templates\about.html:6 .\docs\templates\base.html:25
 msgid "About"
 msgstr "O aplikaci"
 
@@ -69,19 +69,19 @@ msgstr "Doufám, že se Vám bude aplikace líbit."
 msgid "Kindest regards, Mark"
 msgstr "Marek"
 
-#: .\docs\templates\base.html:24
+#: .\docs\templates\base.html:26
 msgid "Environment and methods"
 msgstr "Prostředí a metody"
 
-#: .\docs\templates\base.html:25
+#: .\docs\templates\base.html:27
 msgid "Installation"
 msgstr "Instalace"
 
-#: .\docs\templates\base.html:26
+#: .\docs\templates\base.html:28
 msgid "Discussion"
 msgstr "Diskuze"
 
-#: .\docs\templates\base.html:27
+#: .\docs\templates\base.html:29
 msgid "How to use"
 msgstr "Návod k použití"
 
@@ -398,18 +398,20 @@ msgid "Type 'python startDB.py'."
 msgstr "Spusťte 'python startDB.py'."
 
 #: .\docs\templates\installation.html:33
-msgid "In the Data folder create 'math_limits.json' with empty dict '{}'."
+msgid ""
+"Copy TEMPLATE_math_limits.json into Data folder and rename it to just "
+"math_limits.json."
 msgstr ""
-"Ve složce Data vytvořte soubor 'math_limit.json', jejímž obsahem bude "
-"prázdný slovník '{}'."
+"Překopírujte soubor TEMPLATE_math_limits.json do složky Data a přejmenujte "
+"ho na math_limits.json."
 
 #: .\docs\templates\installation.html:34
 msgid ""
-"In the Data folder create a 'graphstyle.txt' file and write a 'seaborn' to "
-"it without making a new line."
+"Copy TEMPLATE_graphstyle.txt into Data folder and rename it to just "
+"graphstyle.txt."
 msgstr ""
-"Ve složce Data vytvořte soubor 'graphstyle.txt' a zapište do něj "
-"'seaborn' (bez odřádkování)."
+"Překopírujte soubor TEMPLATE_graphstyle.txt do složky Data a přejmenujte ho "
+"na graphstyle.txt."
 
 #: .\docs\templates\installation.html:35
 msgid "Return to root folder."
@@ -435,6 +437,18 @@ msgid ""
 msgstr ""
 "Aktivovat virtuální prostředí je potřeba před každým spuštěním aplikace. "
 "Alternativní řešení je nainstalovat si requirements.txt globálně. "
+
+#~ msgid "In the Data folder create 'math_limits.json' with empty dict '{}'."
+#~ msgstr ""
+#~ "Ve složce Data vytvořte soubor 'math_limit.json', jejímž obsahem bude "
+#~ "prázdný slovník '{}'."
+
+#~ msgid ""
+#~ "In the Data folder create a 'graphstyle.txt' file and write a 'seaborn' "
+#~ "to it without making a new line."
+#~ msgstr ""
+#~ "Ve složce Data vytvořte soubor 'graphstyle.txt' a zapište do něj "
+#~ "'seaborn' (bez odřádkování)."
 
 #~ msgid "Features"
 #~ msgstr "Funkce"
