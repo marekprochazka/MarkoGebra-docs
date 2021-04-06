@@ -11,7 +11,7 @@ class postListView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["posts"] = Post.objects.all().only("id", "title", "author", "date")
+        context["posts"] = Post.objects.all().only("id", "title", "author", "date").order_by('-date')
         return context
 
 
